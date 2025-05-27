@@ -1,0 +1,101 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 10 Nov 2024, 9:26:31 AM
+    Author     : bstar
+*/
+
+/* Navigation styles */
+.auto-style31 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    z-index: 1000;
+}
+
+.auto-style13 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-size: 15pt;
+    color: #FFFFFF;
+}
+
+/* Movie grid styles */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 100px;
+}
+
+.movie-card {
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-poster {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.movie-title {
+    margin: 1rem 0;
+    color: #FFFFFF;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+/* Slider styles */
+.slider-container {
+    margin-top: 80px;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+/* Button styles */
+.nav-button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.nav-button:hover {
+    color: #D415BE;
+}
+
+.book-button {
+    background-color: #D415BE;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.book-button:hover {
+    background-color: #a5129c;
+}

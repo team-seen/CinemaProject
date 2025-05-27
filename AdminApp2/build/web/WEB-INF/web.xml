@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <welcome-file-list>
+        <welcome-file>JSP/AdminLoginPage.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <servlet-class>Servlet.AdminLoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteUserServlet</servlet-name>
+        <servlet-class>Servlet.DeleteUserServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminUserServlet</servlet-name>
+        <servlet-class>Servlet.AdminUserServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddMovieServlet</servlet-name>
+        <servlet-class>Servlet.AddMovieServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminMovieServlet</servlet-name>
+        <servlet-class>Servlet.AdminMovieServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <url-pattern>/AdminLoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminUserServlet</servlet-name>
+        <url-pattern>/AdminUserServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddMovieServlet</servlet-name>
+        <url-pattern>/AddMovieServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminMovieServlet</servlet-name>
+        <url-pattern>/AdminMovieServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteUserServlet</servlet-name>
+        <url-pattern>/DeleteUserServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteMovieServlet</servlet-name>
+        <servlet-class>Servlet.DeleteMovieServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteMovieServlet</servlet-name>
+        <url-pattern>/DeleteMovieServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    <servlet-name>StatisticsServlet</servlet-name>
+    <servlet-class>Servlet.StatisticsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>StatisticsServlet</servlet-name>
+    <url-pattern>/StatisticsServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>PriceManagementServlet</servlet-name>
+    <servlet-class>Servlet.PriceManagementServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>PriceManagementServlet</servlet-name>
+    <url-pattern>/PriceManagementServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ShowtimeServlet</servlet-name>
+    <servlet-class>Servlet.ShowtimeServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ShowtimeServlet</servlet-name>
+    <url-pattern>/ShowtimeServlet</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>ReportServlet</servlet-name>
+    <servlet-class>Servlet.ReportServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ReportServlet</servlet-name>
+    <url-pattern>/ReportServlet</url-pattern>
+</servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
