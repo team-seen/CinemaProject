@@ -1,0 +1,49 @@
+# ✅ CinemaProject – Requirements
+
+This document outlines the system, project, and database requirements to successfully run the CinemaProject web application.
+
+## 💻 System Requirements
+
+- Java JDK 8 or higher
+- Apache Tomcat 8.5 or higher
+- MySQL Server (5.7 or 8.0 recommended)
+- NetBeans IDE
+- Apache Ant
+
+## 📦 Project Dependencies
+
+Required libraries (placed in `WEB-INF/lib`):
+
+- mysql-connector-j-8.1.0.jar
+- jstl-1.2.jar
+- javax.servlet.jsp.jstl-api-1.2.2.jar
+- javax.servlet.jsp.jstl-1.2.1.jar.zip
+- json-simple-1.1.1.jar
+
+## 🗄️ Database Configuration
+
+1. Create a MySQL database (e.g., `cinema_db`)
+2. Update `DatabaseUtil.java`:
+
+```java
+String jdbcURL = "jdbc:mysql://localhost:3306/cinema_db";
+String dbUser = "root";
+String dbPassword = "yourpassword";
+```
+
+## ⚙️ Configuration Files
+
+- `web.xml` – Defines servlet mappings
+- `context.xml` – Used for Tomcat context deployment (default path: `/`)
+
+## 🚀 Deployment Steps
+
+1. Open the project in NetBeans
+2. Ensure libraries and MySQL are correctly configured
+3. Run the project using NetBeans or Ant:
+
+```bash
+ant run -Dtomcat.username=admin -Dtomcat.password=yourpassword
+```
+
+4. Open in browser: [http://localhost:8080/CinemaProject](http://localhost:8080/CinemaProject)
